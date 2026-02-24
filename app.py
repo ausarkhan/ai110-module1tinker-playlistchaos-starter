@@ -298,10 +298,10 @@ def lucky_section(playlists):
     st.header("Lucky pick")
 
     mode = st.selectbox(
-        "Pick from",
-        options=["any", "hype", "chill"],
-        index=0,
-    )
+    "Pick from",
+    options=["any", "hype", "chill", "mixed"],
+    index=0,
+)
 
     if st.button("Feeling lucky"):
         pick = lucky_pick(playlists, mode=mode)
